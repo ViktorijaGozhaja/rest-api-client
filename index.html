@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="button" id="characters">
+        Characters
+    </div>
+    <div class="button" id="locations">
+        Locations
+    </div>
+    <div class="button" id="episodes">
+        Episodes
+    </div>
+    <div id="characterFilters" class="filters">
+        <label for="characterName">Name: </label>
+        <input type="text" id="characterName" name="characterName">
+        <label for="status">Status: </label>
+        <input type="text" id="status" name="status">
+        <label for="species">Species: </label>
+        <input type="text" id="species" name="species">
+        <label for="gender">Gender: </label>
+        <input type="text" id="gender" name="gender">
+        <button id="filterCharacters">Filter</button>
+    </div>
+    <div id="locationFilters" class="filters">
+        <label for="locationName">Name: </label>
+        <input type="text" id="locationName" name="locationName">
+        <label for="type">Type: </label>
+        <input type="text" id="type" name="type">
+        <label for="dimension">Dimension: </label>
+        <input type="text" id="dimension" name="dimension">
+        <button id="filterLocations">Filter</button>
+    </div>
+    <div id="episodeFilters" class="filters">
+        <label for="episodeName">Name: </label>
+        <input type="text" id="episodeName" name="episodeName">
+        <label for="episode">Episode: </label>
+        <input type="text" id="episode" name="episode">
+        <button id="filterEpisodes">Filter</button>
+    </div>
+    <div class="pages">
+        <span id="prev">prev</span>
+        <span> | </span>
+        <span id="next">next</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

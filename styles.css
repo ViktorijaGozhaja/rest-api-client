@@ -1,0 +1,102 @@
+.button {
+    display: inline-block;
+    background:linear-gradient(to bottom, rgb(253, 219, 154), rgb(250, 173, 29));
+    border: 1px solid rgb(250, 173, 29);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px 0px 20px 0px;
+    box-shadow: 5px 5px 10px darkgray;
+    font-family: "Arial";
+}
+.container {
+    width: 1220px;
+    margin: 0 auto;
+}
+    
+.character-card {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    position: relative;
+    float: left;
+}
+.character-card img {
+    border-radius: 15px 15px 0px 0px;
+}
+.title {
+   background-color: rgba(0, 0, 0, 0.5);
+   width: 270px;
+   height: 70px;
+   position: absolute;
+   top: 200px;
+   font-family: "Arial";
+   color: white;
+   padding: 15px;
+}
+.info {
+    background-color: rgb(66, 66, 66);
+    width: 270px;
+    height: 270px;
+    border-radius: 0px 0px 15px 15px;
+    padding: 15px;
+    margin-top: -5px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding: 15px 5px 15px 5px;
+}
+.row:last-child {
+    border-bottom: none;
+}
+.key {
+    text-transform: uppercase;
+    color: rgb(201, 201, 201);
+    text-align: left;
+}
+.value {
+    color: orange;
+    text-align: right;
+}
+.location-card, .episode-card {
+    float: left;
+    background-color: rgb(90, 90, 90);
+    width: 270px;
+    height: 200px;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 1px;
+}
+.pages {
+    position: fixed;
+    top: 20px; 
+    right: 20px;
+    z-index: 1000;
+}
+#prev:hover, #next:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+}
+#prev:active, #next:active {
+    color: rgb(65, 141, 255);
+}
+#prev.unactive, #next.unactive {
+    color: gray;
+    cursor: default;
+    text-decoration: none;
+}
+label {
+    margin-left: 10px;
+}
+#characterFilters {
+    display: inline-block;
+}
+#locationFilters {
+    display: none;
+}
+#episodeFilters {
+    display: none;
+}
+
